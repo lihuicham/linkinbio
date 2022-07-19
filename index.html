@@ -1,60 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Link In Bio</title>
-    <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Link In Bio</title>
+        <link rel="stylesheet" href="style.css">
 
-    <!--=============== BOXICONS ===============-->
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-</head>
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+        <script>
+            // Run the script after the content is fully loaded 
+            window.addEventListener('DOMContentLoaded', () => {
+                VANTA.BIRDS({
+                    el: "#vanta",
+                    mouseControls: true,
+                    touchControls: true,
+                    gyroControls: false,
+                    minHeight: 200.00,
+                    minWidth: 200.00,
+                    scale: 1.00,
+                    scaleMobile: 1.00,
+                    color1: 0xbb61a0,
+                    color2: 0x17c1e5,
+                    speedLimit: 4.00,
+                    separation: 33.00,
+                    alignment: 12.00,
+                    cohesion: 10.00,
+                    backgroundAlpha: 0.0
+                })
+            })
+            setTimeout(() => {
+                const main = document.querySelector('main');
+                main.style.opacity = 1
+                main.style.filter = 'blur(0px)'
+            }, 1000);
 
-<body>
-    <video autoplay muted loop playsinline>
-        <source src="./assets/bg-video-mp4.mp4" type="video/mp4; codecs=hvc1">
-        <source src="./assets/bg-video-webm.webm" type="video/webm; codecs=vp9">
-    </video>
-    <main>
-        <header>
-            <img src="./assets/me.JPG" alt="my-image">
-            <h1>@lihuicham</h1>
-        </header>
-    
-        <ul>
-            <li>
-                <a href="https://www.lihuicham.com/" target="_blank">
-                    <i class='bx bxs-home'></i>
-                    Personal Website
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/lihuicham" target="_blank">
-                    <i class='bx bxl-github'></i>
-                    GitHub
-                </a>
-            </li>
-            <li>
-                <a href="http://www.linkedin.com/in/lihuicham" target="_blank">
-                    <i class='bx bxl-linkedin-square'></i>
-                    LinkedIn
-                </a>
-            </li>
-            <li>
-                <a href="https://medium.com/@lihuicham" target="_blank">
-                    <i class='bx bxl-medium-square'></i>
-                    Medium Blog
-                </a>
-            </li>
-            <li>
-                <a href="mailto: lihuicham@gmail.com" target="_blank">
-                    <i class='bx bxs-envelope'></i>
-                    Contact me
-                </a>
-            </li>
-        </ul>
-    </main>
+        </script>
+    </head>
 
-</body>
+    <body>
+<!-- 
+        <video autoplay muted loop playsinline>
+            <source src="./assets/bg-video-mp4.mp4" type="video/mp4; codecs=hvc1">
+            <source src="./assets/bg-video-webm.webm" type="video/webm; codecs=vp9">
+        </video>
+         -->
+        <div id="vanta"></div>
+        <main>
+            <header>
+                <img src="./assets/me.JPG" alt="my-image">
+                <h1>@lihuicham</h1>
+            </header>
+        
+            <ul>
+                <li>
+                    <a href="https://www.lihuicham.com/" target="_blank">
+                        <i class='bx bxs-home'></i>
+                        Personal Website
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/lihuicham" target="_blank">
+                        <i class='bx bxl-github'></i>
+                        GitHub
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.linkedin.com/in/lihuicham" target="_blank">
+                        <i class='bx bxl-linkedin-square'></i>
+                        LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href="https://medium.com/@lihuicham" target="_blank">
+                        <i class='bx bxl-medium-square'></i>
+                        Medium Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto: lihuicham@gmail.com" target="_blank">
+                        <i class='bx bxs-envelope'></i>
+                        Contact me
+                    </a>
+                </li>
+            </ul>
+        </main>
+    </body>
 </html>
