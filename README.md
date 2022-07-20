@@ -62,7 +62,7 @@ Use ```backgroundAlpha: 0.0``` to remove the default background (create transpar
 ```
 Create an array of images with background images in your asset. Use functions from the ```Math``` library such as ```Math.random()``` to randomize the order of the images.  
 
-Check out this [page](https://www.w3schools.com/cssref/css3_pr_background.asp) by W3Schools on styling the CSS ```background``` property of ```body``` DOM element. 
+Check out this [page](https://www.w3schools.com/cssref/css3_pr_background.asp) by W3Schools on styling the CSS ```background``` property of the ```body``` DOM element. 
 
 ### Video in the background 
 This part is commented out in the final project.   
@@ -92,8 +92,8 @@ All images including profile picture and background images are taken during a sc
 All photo credits go to my friends who contributed the photos. Thank you ! 
 
 <br>
-Note: This Link In Bio project is best viewed on **mobile phone screen**.   
 
+Note: This Link In Bio project is best viewed on **mobile phone screen**.   
 **Link In Bio: [Project Demo](https://lihuicham.github.io/linkinbio/)**
 
 
