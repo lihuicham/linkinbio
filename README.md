@@ -50,7 +50,8 @@ Use ```backgroundAlpha: 0.0``` to remove the default background (create transpar
 ```
 <script>
     window.onload = function () {
-        var images = ['./assets/b1.jpg', './assets/b2.jpg', './assets/b3.jpg', './assets/b4.jpg', './assets/b5.jpg', './assets/b6.jpg', './assets/b7.jpg', './assets/b8.jpg'];
+        var images = ['./assets/background-images/b1.jpg', './assets/background-images/b2.jpg', './assets/background-images/b3.jpg', './assets/background-images/b4.jpg', 
+                    './assets/background-images/b5.jpg', './assets/background-images/b6.jpg', './assets/background-images/b7.jpg', './assets/background-images/b8.jpg'];
         var image = images[Math.floor(Math.random() * images.length)];
         document.getElementsByTagName('body')[0].style.backgroundImage = "url('" + image + "')";
         document.getElementsByTagName('body')[0].style.backgroundRepeat = "no-repeat";
