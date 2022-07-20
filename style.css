@@ -113,9 +113,30 @@ a {
     margin-top: -8px;
 }
 
+.repo > a {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.repo > a > p {
+    font-size: 0.5em;
+    color: white;
+    text-decoration: underline
+}
+
+.repo > a > i {
+    font-size: 0.5em;
+    color: white;
+    margin-left: 0.3em;
+    text-decoration: none;
+}
+
 .copy {
     text-align: center;
     color: #c6c6c6;
-    font-size: 0.8em;
+    font-size: 1em;
     margin-top: 3em;
 }
